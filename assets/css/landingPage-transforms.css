@@ -1,9 +1,6 @@
-.li-transform {
-    transition: transform 2.0s ease-in-out;
-}
-
-.li-transform:hover {
-    transform: scaleX(3);
+.li-transform > a:hover {
+  transform: scale(1.6);
+  transition: transform 0.5s ease-in-out;
 }
 
 .li-text-transform {
