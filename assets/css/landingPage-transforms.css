@@ -1,0 +1,32 @@
+.li-transform > a:hover {
+  transform: scale(1.6);
+  transition: transform 0.5s ease-in-out;
+}
+
+.li-text-transform > a:active {
+  font-size: 60px;
+  transition: font-size 0.5s ease;
+}
+
+.li-text-color > a:hover {
+  animation: colorRotate 500ms ease infinite;
+  /* transition: all 0.1s ease; */
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
