@@ -1,0 +1,20 @@
+.li-transform:hover {
+    transform: scale(2);
+    transition-timing-function: ease-in;
+}
+.li-text-transform:hover {
+    animation: mymove 5s infinite;
+}
+.li-text-color {
+    color: blue;
+    transition: color 400ms ease;
+}
+.li-text-color:active {
+    color: red;
+}
+
+@keyframes mymove {
+    0% {font-size: 10px;}
+    50% {font-size: 40px;}
+    100% {font-size: 60px;}
+}
