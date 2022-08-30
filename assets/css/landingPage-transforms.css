@@ -1,10 +1,3 @@
-.li-transform:hover {
-    transform: scale(2);
-    transition-timing-function: ease-in;
-}
-.li-text-transform:hover {
-    animation: mymove 5s infinite;
-}
 .li-text-color {
     color: blue;
     transition: color 400ms ease;
@@ -17,4 +10,18 @@
     0% {font-size: 10px;}
     50% {font-size: 40px;}
     100% {font-size: 60px;}
+}
+
+.li-transform > a:hover {
+  transform: scale(1.6);
+  transition: transform 0.5s ease-in-out;
+}
+
+.li-text-transform {
+    transform: perspective(1) scaleZ(1) rotateX(0deg);
+    transition: transform 0.75s ease;  
+}
+
+.li-text-transform:hover {
+    transform: perspective(500px) scaleZ(2) rotateX(45deg);
 }
